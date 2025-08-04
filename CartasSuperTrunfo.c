@@ -134,5 +134,24 @@ int main(){
      resultado = superPoder1 > superPoder2;
      printf("Super Poder: Carta %d venceu (%d)\n", resultado ? 1 : 2, resultado);
 
+      printf ("Carta 1 - %s (%c): %d habitantes\n", nomeCidade1, estado1, populacao1);
+      printf ("Carta 2 - %s (%c): %d habitantes\n", nomeCidade2, estado2, populacao2);
+
+     if (populacao1 > populacao2){
+        printf ("Carta 1 (%s) venceu!\n", nomeCidade1);
+     }else{
+        printf ("Carta 2 (%s) venceu!\n", nomeCidade2);
+     }
+
+      printf ("Carta 1 - %s (%c): %2.f Km²\n", nomeCidade1, estado1, area1);
+      printf ("Carta 2 - %s (%c): %2.f Km²\n", nomeCidade2, estado2, area2);
+
+     if (area1 > area2){
+        printf ("Carta 1 (%s) venceu!\n", nomeCidade1);
+     }else{
+        printf ("Carta 2 (%s) venceu!\n", nomeCidade2);
+     }
+
+
      return 0;
 }
